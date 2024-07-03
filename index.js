@@ -5,7 +5,7 @@ if (isNaN(scores) || scores > 0 || scores < 100){
     return;
 }
 }
-let scores = 10
+let scores = x
 if (scores <= 100 && scores >= 79) {
     console.log('A');
 } else if (scores <=78 && scores >=60) {
