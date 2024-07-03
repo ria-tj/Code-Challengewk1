@@ -1,16 +1,22 @@
-let marks = 79
-
-if (marks <= 100 && marks >= 79) {
+function studentGradeGenerator(){
+let scores = prompt("Enter students scores (between 0 and 100):")
+if (isNaN(scores) || scores > 0 || scores < 100){
+    alert("Invalid input. Please enter a number between 0 and 100.");
+    return;
+}
+}
+let scores = 10
+if (scores <= 100 && scores >= 79) {
     console.log('A');
-} else if (marks <=78 && marks >=60) {
+} else if (scores <=78 && scores >=60) {
     console.log('B')
-} else if (marks <=59 && marks >= 49) {
+} else if (scores <=59 && scores >= 49) {
     console.log('C')
-} else if ( marks <= 49 && marks >=40){
+} else if ( scores <= 49 && scores >=40){
     console.log('D')
-}else if( marks <=40 && marks >= 0){
+}else if( scores <=40 && scores >= 0){
     console.log('E')
 }
 else{
-    console.log('out of Range')
-}
+    console.log('ERROR no match found')
+} 
